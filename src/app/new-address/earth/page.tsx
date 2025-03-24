@@ -79,7 +79,7 @@ export default function EarthAddressPage() {
             handleGetInfoByCEP(cleanedValue);
           }
         }}
-        customClasses={{ container: "md:w-1/2 pr-2" }}
+        customClasses={{ container: "md:w-1/2 md:pr-2" }}
       />
       <fieldset className="w-full flex flex-col md:flex-row gap-3">
         <Input
