@@ -1,3 +1,4 @@
+import { EarthAddress } from "@/interfaces/EarthAddress";
 import { getTypeAddress } from "@/utils/typeAddress";
 import Image from "next/image";
 import React from "react";
@@ -37,7 +38,10 @@ export const AddressCard = React.memo(function AddressCard({
           <p className="flex flex-col gap-1">
             <span className="font-bold text-content text-sm">{fullname}</span>
             <span className="text-xs text-gray-700">{phone}</span>
-            <Details type={planet} addressDetails={addressDetails} />
+            <Details
+              type={planet as "earth"}
+              addressDetails={addressDetails as EarthAddress}
+            />
           </p>
           <footer className="hidden justify-end items-center w-full gap-3 mt-auto mb-1">
             <button
