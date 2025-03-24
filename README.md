@@ -20,6 +20,8 @@ Caso opte por executar localmente o projeto, é extremamente simples, basta clon
 
 :heavy_check_mark: Listagem de endereços com memoização
 
+:heavy_check_mark: Permanência da pesquisa/filtragem de endereços com utilização de URL State
+
 :heavy_check_mark: Filtragem por pesquisa baseada em CEP e Número de Lote
 
 :heavy_check_mark: Possibilidade de exclusão de endereço
