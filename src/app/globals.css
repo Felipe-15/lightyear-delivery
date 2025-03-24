@@ -5,4 +5,37 @@
   --color-brand-500: #6333de;
   --color-content: #5d5d5d;
   --color-gray-500: #b4b3b9;
+  --color-gray-600: #e8e8e8;
+  --color-gray-700: #c2c1c4;
+  --color-danger: #ec2244;
+  --color-light-background: #af91e6;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+input:checked + div + article div footer {
+  display: flex;
+  animation: fadeIn 200ms ease-in-out;
+}
+
+input:checked + div div {
+  display: block;
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .grid-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 380px));
+    gap: 1rem;
+  }
 }
