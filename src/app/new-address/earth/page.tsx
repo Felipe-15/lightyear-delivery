@@ -51,7 +51,7 @@ export default function EarthAddressPage() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit, () => setTimeout(clearErrors, 5000))}
-      className="flex flex-col px-3 gap-3 md:max-w-[660px] md:mx-auto"
+      className="flex flex-col px-3 gap-3 md:max-w-[660px] md:mx-auto mb-[100px] md:pb-0"
     >
       <legend className="font-semibold text-lg text-content">
         Dados do endereço
@@ -166,7 +166,7 @@ export default function EarthAddressPage() {
           customClasses={{ container: "w-full" }}
         />
       </fieldset>
-      <div className="flex gap-3 w-full items-center mt-6 mb-4 md:max-w-[240px] md:ml-auto md:mt-3">
+      <div className="fixed bottom-0 left-0 right-0 bg-white md:static flex gap-3 w-full items-center mt-6 pb-4 md:mb-4 pt-4 md:pt-0 px-3 md:px-0 md:max-w-[240px] md:ml-auto md:mt-3">
         <Button width="full">Salvar</Button>
         <Button
           type="button"
