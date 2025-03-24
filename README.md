@@ -36,10 +36,12 @@ Sempre tento me atentar a performance e evitar criação de estados desnecessár
 
 ## :arrow_up_small: Possíveis melhorias
 
-:small_orange_diamond: Adição de um `json-server` para persistência dos dados em um banco de dados
+:small_orange_diamond: Adição de um `json-server` para persistência dos dados em um banco de dados.
 
-:small_orange_diamond: Maior utilização de SSR, como inicialmente é usado o `localStorage` que é executado em Client Side, algumas páginas poderiam ser completamente do lado do servidor, usando `Server Actions` para enviar os formulários
+:small_orange_diamond: Maior utilização de SSR, como inicialmente é usado o `localStorage` que é executado em Client Side, oque faz várias páginas acabarem sendo forçadas a CSR (Client Side Rendering), algumas páginas poderiam ser completamente do lado do servidor, usando `Server Actions` para enviar os formulários.
 
-:small_orange_diamond: Paginação com scroll infinito na listagem de endereços
+:small_orange_diamond: Paginação com scroll infinito na listagem de endereços.
 
 :small_orange_diamond: Implementação de `Skeleton Loadings` e `Loading Pages` com `Suspense API` para uma melhor interatividade, que casaria bem com a implementação do `json-server` para aguardar o retorno das chamadas.
+
+:small_orange_diamond: Adição de testes unitários e/ou E2E para garantir a integridade do código e das próximas features sem riscos de erros colaterais no código.
