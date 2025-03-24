@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# :rocket: Lightyear Delivery
 
-## Getting Started
+## :pencil2: Descrição
 
-First, run the development server:
+O site consiste em uma listagem de endereços para entregas, com a possibilidade de seleção entre Terra e Marte, com cada um tendo seus próprios dados relativos.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+[Site em produção](https://lightyear-delivery.netlify.app/) || [Meu Figma](https://www.figma.com/design/3pgUxys1yNWxS15J5Xh0WX/desafio---beyond?node-id=0-1&t=tfSebiXxW2EKRa1y-1)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## :computer: Como executar
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Caso opte por executar localmente o projeto, é extremamente simples, basta clonar o repositório e executar `npm run dev` - para modo desenvolvimento -, se preferir uma build local, `npm run build` e `npm start`, irão fazer executar o projeto em estado de produção.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## :page_facing_up: Páginas
 
-## Learn More
+- [x] Home - (Listagem de Endereços)
+- [x] Criação de Endereço da Terra
+- [x] Criação de Endereço de Marte
 
-To learn more about Next.js, take a look at the following resources:
+## :sparkles: Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+:heavy_check_mark: Listagem de endereços com memoização
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+:heavy_check_mark: Filtragem por pesquisa baseada em CEP e Número de Lote
 
-## Deploy on Vercel
+:heavy_check_mark: Possibilidade de exclusão de endereço
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+:heavy_check_mark: Busca de informações do endereço por meio do CEP (Endereço da Terra)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+:heavy_check_mark: Validação de formulários
+
+:heavy_check_mark: Responsividade em todas as telas
+
+## :boom: Problemas enfrentados
+
+Sempre tento me atentar a performance e evitar criação de estados desnecessários, nesse projeto por ser mais simples, tentei aplicar mais regras de CSS para lógicas básicas como sumir ou alterar comportamentos simples de componentes, afim de evitar renderizações sem necessidade, oque deu um pouco mais de trabalho no input radio invisível que controla a escolha do card, ele faz evitar a necessidade de um estado geral na página que identifica o endereço selecionado.
+
+## :arrow_up_small: Possíveis melhorias
+
+:small_orange_diamond: Adição de um `json-server` para persistência dos dados em um banco de dados
+
+:small_orange_diamond: Maior utilização de SSR, como inicialmente é usado o `localStorage` que é executado em Client Side, algumas páginas poderiam ser completamente do lado do servidor, usando `Server Actions` para enviar os formulários
+
+:small_orange_diamond: Paginação com scroll infinito na listagem de endereços
+
+:small_orange_diamond: Implementação de `Skeleton Loadings` e `Loading Pages` com `Suspense API` para uma melhor interatividade, que casaria bem com a implementação do `json-server` para aguardar o retorno das chamadas.
