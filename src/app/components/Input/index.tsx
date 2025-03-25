@@ -16,7 +16,7 @@ export const Input = ({
         {Icon && <Icon size={20} className="fill-zinc-400" />}
         <input
           {...props}
-          className={`outline-transparent text-sm font-medium w-full placeholder:text-zinc-300 ${customClasses?.input}`}
+          className={`outline-none text-sm font-medium w-full placeholder:text-zinc-300 ${customClasses?.input}`}
         />
       </label>
       {!!error && (
