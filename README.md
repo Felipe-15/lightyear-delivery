@@ -26,7 +26,7 @@ Caso opte por executar localmente o projeto, é extremamente simples, basta clon
 
 :heavy_check_mark: Possibilidade de exclusão de endereço
 
-:heavy_check_mark: Busca de informações do endereço por meio do CEP (Endereço da Terra)
+:heavy_check_mark: Busca de informações do endereço por meio do CEP (Endereço da Terra) e Número do Lote (Endereço de Marte)
 
 :heavy_check_mark: Validação de formulários
 
