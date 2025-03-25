@@ -1,7 +1,6 @@
 import { CEPResponse } from "@/interfaces/CEPResponse";
 
 export const getAddressByCEP = async (cep: string) => {
-  console.log("Buscou cep!");
   try {
     const addressData = (await fetch(
       `https://viacep.com.br/ws/${cep}/json/`
